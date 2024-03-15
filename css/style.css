@@ -6,13 +6,19 @@
   top: 0;
   left: 0;
   height: 80px;
-  padding: 15px;
 }
 .header__container {
   display: flex;
-  justify-content: flex-end;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 30px;
 }
 .header__logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
 }
 .menu {
 }
@@ -27,10 +33,11 @@
 }
 .menu__link {
   color: #fff;
-  font-weight: 700;
+  transition: 0.5s ease;
 }
 .menu__link:hover {
   text-decoration: underline;
+  font-weight: 700;
 }
 .submenu {
   display: none;
@@ -68,7 +75,6 @@
   transition: 02s ease;
 }
 .item:hover {
-  border: 1px solid #ffbfbf;
   box-shadow: -1px 2px 34px -9px rgb(206, 85, 64);
 }
 .item:hover button {
@@ -99,8 +105,7 @@
   font-weight: 700;
   line-height: 1.3;
 }
-.item__iconStar {
-}
+
 .item__text {
   color: #000;
   text-align: center;
@@ -135,6 +140,7 @@
 .section2 {
   background: hsl(0, 0%, 95%);
   padding: 30px;
+  margin-bottom: 50px;
   width: 100%;
   border-radius: 10px;
   box-shadow: -1px 2px 34px -9px rgba(135, 141, 170, 1);

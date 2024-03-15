@@ -23,3 +23,7 @@ body {
 a {
   text-decoration: none;
 }
+input {
+  padding: 10px;
+  width: 100%;
+}
