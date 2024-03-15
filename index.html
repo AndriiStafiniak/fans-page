@@ -32,26 +32,49 @@
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/menu/mobile.css" />
+    <link rel="stylesheet" href="css/menu/touch-screen.css" />
+    <link rel="stylesheet" href="css/menu/style.css" />
+    <link rel="stylesheet" href="css/menu/submenu.css" />
     <title>Cosibella Fans</title>
   </head>
   <body>
     <header class="header">
       <div class="header__container">
         <a href="#" class="header__logo">Cosibela Fans</a>
-        <nav class="menu">
-          <ul class="menu__body">
-            <li class="menu__item">
-              <a href="#" class="menu__link">Strona głowna</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">O nas</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Kontakt</a>
-            </li>
-            <li class="menu__item">
-              <div class="menu__link">
-                Sklepy Cosibella
+        <div class="menu__main">
+          <div class="menu__icon js-menu__icon">
+            <span></span>
+          </div>
+          <nav class="menu js-menu">
+            <ul class="menu__body">
+              <li class="menu__item js-menu__item">
+                <a
+                  href="#"
+                  data-goto=".section"
+                  class="menu__link js-menu__link"
+                  >Strona głowna</a
+                >
+              </li>
+              <li class="menu__item">
+                <a
+                  href="#"
+                  data-goto=".section2"
+                  class="menu__link js-menu__link"
+                  >O nas</a
+                >
+              </li>
+              <li class="menu__item">
+                <a
+                  href="#"
+                  data-goto=".section3"
+                  class="menu__link js-menu__link"
+                  >Kontakt</a
+                >
+              </li>
+              <li class="menu__item">
+                <p class="menu__link">Sklepy Cosibella</p>
+                <span class="menu__arrow js-menu__arrow"></span>
                 <ul class="submenu">
                   <li class="submenu__item">
                     <a href="#" class="submenu__link">podstrona 1</a>
@@ -63,10 +86,10 @@
                     <a href="#" class="submenu__link">podstrona 3</a>
                   </li>
                 </ul>
-              </div>
-            </li>
-          </ul>
-        </nav>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -375,7 +398,6 @@
                 required
               ></textarea>
             </p>
-
             <button class="form__button">Wyslij</button>
           </form>
         </div>

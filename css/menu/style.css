@@ -1,0 +1,19 @@
+.menu {
+}
+.menu__body {
+  display: flex;
+  align-items: center;
+}
+.menu__body li {
+  padding: 15px;
+}
+.menu__item li {
+  margin-right: 20px;
+}
+.menu__link {
+  color: #fff;
+  transition: 0.5s ease;
+}
+.menu__link:hover {
+  text-decoration: underline;
+}
