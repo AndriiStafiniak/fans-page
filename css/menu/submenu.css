@@ -4,12 +4,18 @@
   visibility: hidden;
   pointer-events: none;
   transition: all 0.3s ease 0s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .submenu__item {
   padding: 10px;
 }
 .submenu__link {
   color: black;
+}
+.submenu__link:hover {
+  text-decoration: underline;
 }
 body.pc .menu__body > li:hover .submenu {
   opacity: 1;

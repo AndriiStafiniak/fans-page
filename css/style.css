@@ -40,15 +40,17 @@
   gap: 20px;
 }
 .item {
-  display: grid;
   width: 318px;
-  height: 571px;
+  height: auto;
   display: flex;
   flex-direction: column;
+  gap: 24px;
   align-items: center;
   padding: 24px 19px;
   position: relative;
   transition: 02s ease;
+  min-height: 570px;
+  position: relative;
 }
 .item:hover {
   box-shadow: -1px 2px 34px -9px rgb(206, 85, 64);
@@ -56,15 +58,47 @@
 .item:hover button {
   opacity: 1;
 }
+
 .item__image {
-  width: 280px;
+  width: 100%;
   height: 280px;
 }
 .item_extraContent {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
-  font-style: normal;
+  font-size: 10px;
+  color: #000;
+  line-height: 2.4;
+  padding: 6px 14px 6px 14px;
+  text-transform: uppercase;
+  display: flex;
+  padding: 3px;
+  justify-content: center;
+}
+.extra__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.item_extraContent--first {
+  background: #e5f4f1;
+  min-width: 140px;
+  position: absolute;
+  top: 46%;
+  left: 10px;
+}
+.item_extraContent--second {
+  background: #fbc97c;
+  left: 10px;
+  top: 52%;
+  position: absolute;
+}
+.item_extraContent--third {
+  background: #fad2d1;
+  left: 84px;
+  top: 52%;
+  position: absolute;
 }
 
 .item__contentContainer {
@@ -160,5 +194,21 @@
 @media (max-width: 767px) {
   .header__logo {
     font-size: 20px;
+  }
+  .section {
+    font-size: 14px;
+    display: flex;
+  }
+  .section2__title {
+    font-size: 20px;
+  }
+  .footer__content {
+    font-size: 12px;
+  }
+  .section3 {
+    font-size: 12px;
+  }
+  .item {
+    width: 160px;
   }
 }
