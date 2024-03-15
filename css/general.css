@@ -72,6 +72,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 15px;
 }
 .footer__content {
   color: #fff;
@@ -89,8 +90,9 @@
 @media (max-width: 767px) {
   .main {
     padding: 10px;
+    font-size: 14px;
   }
-  .header__logo {
+  se .header__logo {
     font-size: 20px;
   }
   .section__container {

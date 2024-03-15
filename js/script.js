@@ -98,7 +98,7 @@
   };
 
   const init = () => {
-    showUserMessage();
+    // showUserMessage();
     isTouchScreen();
     navigation();
     toggleClassSubMenu();

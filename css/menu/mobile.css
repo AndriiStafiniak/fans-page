@@ -87,7 +87,7 @@
   }
   body.mobile .menu__body > li.active .submenu {
     width: 100%;
-    top: 60%;
+    top: 50%;
     height: 50%;
   }
 }

@@ -67,4 +67,10 @@
   .container {
     grid-template-columns: 1fr;
   }
+  .container__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
