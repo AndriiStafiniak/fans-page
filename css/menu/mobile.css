@@ -72,10 +72,14 @@
   }
   .submenu {
     position: relative;
-    flex: 1 1 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
     margin-top: 15px;
   }
+
   .menu__body {
     flex-direction: column;
     justify-content: center;
@@ -83,6 +87,7 @@
   }
   body.mobile .menu__body > li.active .submenu {
     width: 100%;
-    top: 90%;
+    top: 60%;
+    height: 50%;
   }
 }
