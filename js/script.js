@@ -85,7 +85,20 @@
     hiddenMenu(menuIcon, menuBody);
   };
 
+  const showUserMessage = () => {
+    const form = document.querySelector(".js-form");
+    if (!form) {
+      return;
+    }
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+    });
+    form.innerHTML =
+      "<p class='userMessage'> Dziekujemy za wyslanie wiadomości, wkrótce się odezwiemy!</p>";
+  };
+
   const init = () => {
+    showUserMessage();
     isTouchScreen();
     navigation();
     toggleClassSubMenu();
