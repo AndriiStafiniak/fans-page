@@ -22,7 +22,6 @@
   position: relative;
   z-index: 5;
 }
-
 .main {
   margin: 0 auto;
   max-width: 1200px;
@@ -38,7 +37,6 @@
 }
 .section2 {
   background: hsl(0deg 100% 94.45%);
-
   padding: 30px;
   margin-bottom: 50px;
   width: 100%;
@@ -64,7 +62,6 @@
   position: relative;
   height: 320px;
 }
-
 .footer {
   width: 100%;
   background-color: #474747;
