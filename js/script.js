@@ -94,15 +94,15 @@
       event.preventDefault();
     });
     form.innerHTML =
-      "<p class='userMessage'> Dziekujemy za wyslanie wiadomości, wkrótce się odezwiemy!</p>";
+      "<p class='userMessage'> Dziękujemy za wysłanie wiadomości, wkrótce się odezwiemy!</p>";
   };
 
   const init = () => {
-    // showUserMessage();
     isTouchScreen();
     navigation();
     toggleClassSubMenu();
     showMenuMobile();
+    showUserMessage();
   };
   init();
 }
