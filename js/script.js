@@ -49,6 +49,7 @@
       headerOffSet;
     scrollToSection(goToSectionValue);
   };
+
   const toggleClassSubMenu = () => {
     const menuArrow = document.querySelector(".js-menu__arrow");
     if (!menuArrow) {
@@ -58,6 +59,7 @@
       menuArrow.parentElement.classList.toggle("active");
     });
   };
+
   const navigation = () => {
     const menuLinks = document.querySelectorAll(".js-menu__link[data-goto]");
     if (!menuLinks || menuLinks.length === 0) {
@@ -87,14 +89,20 @@
 
   const showUserMessage = () => {
     const form = document.querySelector(".js-form");
+    const message = document.querySelector(".userMessage");
     if (!form) {
       return;
     }
     form.addEventListener("submit", (event) => {
       event.preventDefault();
+      message.style.display = "block";
+      form.style.opacity = "0";
+      setTimeout(() => {
+        message.style.display = "none";
+        form.style.opacity = "1";
+        form.reset();
+      }, 5000);
     });
-    form.innerHTML =
-      "<p class='userMessage'> Dziękujemy za wysłanie wiadomości, wkrótce się odezwiemy!</p>";
   };
 
   const init = () => {
