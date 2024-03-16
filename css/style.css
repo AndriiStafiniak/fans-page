@@ -1,26 +1,26 @@
 .item {
   max-width: 318px;
+  min-width: 160px;
   height: auto;
   display: flex;
   flex-direction: column;
-  gap: 24px;
   align-items: center;
   padding: 24px 19px;
-  position: relative;
   transition: 02s ease;
-  min-height: 570px;
+  min-height: 580px;
+  gap: 34px;
 }
-.item:hover {
-  box-shadow: -1px 2px 34px -9px rgb(206, 85, 64);
-}
-.item:hover button {
-  opacity: 1;
+.content__price--specialMargin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
 .item__image {
   width: 100%;
-  max-width: 280px;
-  max-height: 280px;
+  width: 280px;
+  height: 280px;
 }
 .item_extraContent {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -39,8 +39,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  bottom: 10%;
+  gap: 24px;
 }
 .item__price {
   color: #1c1f20;
@@ -56,7 +55,8 @@
   color: #000;
   text-align: center;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.4;
+  margin: 0;
 }
 .button {
   font-size: 14px;
@@ -70,12 +70,9 @@
   background-color: #fff;
   font-weight: 700;
   text-transform: uppercase;
-  position: absolute;
   transition: opacity 0.4s ease;
   opacity: 0;
-  bottom: 2%;
-  left: 50%;
-  transform: translate(-50%);
+  color: #1f1c20;
 }
 .button:hover {
   transition: 0, 3s ease;
@@ -109,63 +106,58 @@
 .heart__svg path:hover {
   fill: red;
 }
-@media (max-width: 550px) {
-  .item__contentContainer {
-    bottom: 20%;
-  }
-  .button {
-    bottom: 10%;
-  }
-}
-@media (max-width: 350px) {
-  .item__contentContainer {
-    bottom: 9%;
-  }
-  .button {
-    bottom: 2%;
-  }
-}
 
 @media (max-width: 767px) {
-  .item__text {
-    margin: 0;
+  .content__price--specialMargin {
+    gap: 24px;
   }
   .item_extraContent--first {
     display: none;
   }
   .item {
-    padding: 5px 5px;
+    padding: 5px 8px;
+    display: flex;
+    gap: 24px;
   }
   .button {
     opacity: 1;
-    margin-top: 15px;
+    margin-top: 24px;
   }
-  .extra__container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 3px;
-    justify-content: flex-start;
-    align-items: flex-start;
+  .extra__container span {
+    margin: 5px;
+  }
+  .item_extraContent--second {
+    padding: 3px;
+    max-width: 80px;
+  }
+  .item_extraContent--third {
+    max-width: 140px;
+    padding: 3px;
   }
 }
 @media (min-width: 767px) {
   .item_extraContent--first {
     position: absolute;
-    top: 53%;
+    top: 80%;
     left: 10px;
   }
   .item_extraContent--second {
     left: 10px;
-    top: 59%;
+    top: 92%;
     position: absolute;
   }
   .item_extraContent--third {
     left: 88px;
-    top: 59%;
+    top: 92%;
     position: absolute;
   }
   .item_extraContent {
     line-height: 1.5;
+  }
+  .item:hover {
+    box-shadow: -1px 2px 34px -9px rgb(206, 85, 64);
+  }
+  .item:hover button {
+    opacity: 1;
   }
 }

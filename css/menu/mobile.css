@@ -83,6 +83,7 @@
   .menu__body {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 15px;
   }
   body.mobile .menu__body > li.active .submenu {
