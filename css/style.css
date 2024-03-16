@@ -103,10 +103,14 @@
 .heart__svg path:hover {
   fill: red;
 }
+body.mobile .button {
+  opacity: 1;
+  margin-top: 24px;
+}
 
 @media (max-width: 767px) {
   .item__contentContainer {
-    height: 150px;
+    height: 190px;
   }
   .content__price--specialMargin {
     gap: 24px;
@@ -122,10 +126,7 @@
   .item__text {
     font-size: 14px;
   }
-  .button {
-    opacity: 1;
-    margin-top: 24px;
-  }
+
   .item_extraContent--second {
     padding: 3px;
     max-width: 80px;
