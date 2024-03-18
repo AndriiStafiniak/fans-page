@@ -7,6 +7,7 @@
     left: 0;
     height: 80px;
     background-color: #ef4d4d;
+    z-index: 4;
   }
   .menu__icon {
     z-index: 5;
@@ -47,9 +48,10 @@
     width: 100%;
     height: 100%;
     background-color: rgb(0, 0, 0, 0.9);
-    padding: 100px 30px 30px 30px;
+    padding: 90px 50px 0px 10px;
     transition: left 0.4s ease 0s;
     overflow: auto;
+    z-index: 3;
   }
   .menu.active {
     left: 0;
@@ -69,24 +71,9 @@
     margin-bottom: 30px;
     flex-wrap: wrap;
   }
-  .submenu {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 15px;
-  }
+
   .menu__body {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 15px;
-  }
-  body.mobile .menu__body > li.active .submenu {
-    width: 100%;
-    top: 50%;
-    height: 50%;
   }
 }

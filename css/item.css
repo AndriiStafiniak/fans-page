@@ -6,8 +6,7 @@
   flex-direction: column;
   align-items: center;
   padding: 24px 19px;
-  transition: 02s ease;
-  min-height: 580px;
+  min-height: 570px;
   gap: 34px;
 }
 .content__price--specialMargin {
@@ -53,6 +52,8 @@
   font-size: 16px;
   line-height: 1.4;
   margin: 0;
+  height: 60px;
+  width: 318px;
 }
 .button {
   font-size: 14px;
@@ -66,12 +67,11 @@
   background-color: #fff;
   font-weight: 700;
   text-transform: uppercase;
-  transition: opacity 0.4s ease;
   opacity: 0;
   color: #1f1c20;
+  transition: 0.4s ease;
 }
 .button:hover {
-  transition: 0, 3s ease;
   border-radius: 24px;
   background: #1f1c20;
   color: #fff;
@@ -100,9 +100,7 @@
   width: 20px;
   height: 20px;
 }
-.heart__svg path:hover {
-  fill: red;
-}
+
 body.mobile .button {
   opacity: 1;
   margin-top: 24px;
@@ -125,6 +123,8 @@ body.mobile .button {
   }
   .item__text {
     font-size: 14px;
+    width: 160px;
+    height: 110px;
   }
 
   .item_extraContent--second {
@@ -154,7 +154,7 @@ body.mobile .button {
     position: absolute;
   }
   .item_extraContent--third {
-    left: 88px;
+    left: 92px;
     top: 92%;
     position: absolute;
   }
@@ -162,7 +162,7 @@ body.mobile .button {
     line-height: 1.5;
   }
   .item:hover {
-    box-shadow: -1px 2px 34px -9px rgb(206, 85, 64);
+    border: 2px solid rgb(209 94 75 / 49%);
   }
   .item:hover button {
     opacity: 1;

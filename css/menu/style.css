@@ -1,6 +1,7 @@
 .menu__body {
   display: flex;
   align-items: center;
+  position: relative;
 }
 .menu__body li {
   padding: 15px;

@@ -48,16 +48,14 @@ body.mobile .menu__body > li.active .menu__arrow {
 }
 .submenu {
   position: absolute;
-  background-color: rgb(203, 71, 126);
   top: 100%;
   right: 0;
   padding: 0px 10px;
   list-style-type: none;
   transition: opacity 0.3s ease-in-out;
 }
-@media (min-width: 800px) {
+@media (min-width: 830px) {
   .submenu {
-    background-color: rgb(255, 127, 165);
-    width: 500px;
+    background-color: rgb(203, 71, 126);
   }
 }
