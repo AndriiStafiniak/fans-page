@@ -10,11 +10,11 @@ Po załadowaniu strony następuje wykonanie kodu JavaScript, który sprawdza, cz
 
 ### Desktop
 
-![Project Screenshot](/images/readme.png)
+![Project Screenshot](images/readme.png)
 
 ### Mobile
 
-![Project Screenshot](/images/readmeMb.png)
+![Project Screenshot](images/readmeMb.png)
 
 ## Demo
 
