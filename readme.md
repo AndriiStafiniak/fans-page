@@ -22,4 +22,4 @@ You can visit my website here: [click here =)](https://andriistafiniak.github.io
 
 ## Description
 
-This website has been crafted using pure HTML, CSS, and JavaScript for recruitment purposes.
+This website has been crafted using pure HTML, CSS, and JavaScript.
